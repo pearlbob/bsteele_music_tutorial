@@ -1,0 +1,19 @@
+#!/bin/tcsh
+set echo; set verbose
+
+set project=bsteele_music_tutorial
+echo $0\:
+
+cd ~/github/$project
+
+#	send to flavor's web location
+set gs=gs://www.bsteele.com/$project
+bsteele_auth
+gcloud storage rsync \
+  ./ $gs -R --quiet --verbosity=error \
+  -x "\..*/.*|\..*|node_modules" \
+	--delete-unmatched-destination-objects \
+	--predefined-acl=publicRead \
+	--cache-control=public,max-age=60
+if ( $status != 0 ) exit -1
+
