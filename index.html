@@ -38,27 +38,55 @@
 <p>Main screens</p>
 <ul>
   <li><a href="video/main_homepage.mp4">Homepage</a>
-    <p>Scrolling will roll the song list.
-      Selecting a song will display it on the <a href="#Player">player</a> screen.
     <ul>
-      <li>Search
-        <p>
-          Type search terms in the text field. Searches will be executed immediately.
-          Note that it will include matches from song titles, artists and cover artists.
-        </p>
+      <li id="Songlist">Songlist</li>
+      <ul>
+        <li>Scrolling</li>
+        Scrolling will roll the song list.
+        Selecting a song will display it on the <a href="#Player">player</a> screen.
+        <li>Search</li>
+        Type search terms in the text field. Searches will be executed immediately.
+        Note that it will include matches from song titles, artists and cover artists.
         <p>Advanced feature: Regular expressions will be processed. For example, try: ba.*fi</p>
-      </li>
-      <li>Filters
-        <p>Filters based on metadata can be used here to limit the selection of songs.</p>
-      </li>
-      <li>Order
-        <p>The order of the song list can be selected.</p>
-      </li>
+
+        <li>Filters</li>
+        Filters based on metadata can be used here to limit the selection of songs.
+        <li>Order</li>
+        The order of the song list can be selected.
+
+      </ul>
 
       <li><a href="video/main_menu_options.mp4">Main menu</a> (the hamburger choices in the upper left)
         <ul>
           <li><a href="video/main_menu_options_options.mp4">Options</a></li>
-          <li>Singers</li>
+          <li><a href="video/singers.mp4">Singers</a></li>
+          <ul>
+            <li>Setup</li>
+            <ul>
+              <li><a href="video/singers_leader_warning.mp4"> Warning: you are not the leader!</a></li>
+              See <a href="#Leader_Follower">Leader/Follower</a>
+              <li><a href="video/singers_list.mp4">Singer's List</a></li>
+              <li>Singer Search</li>
+              <li><a href="video/singers_new.mp4">New singer</a></li>
+              <li id="Other_Actions">
+                <a href="video/singers_other_actions.mp4">Other Actions</a></li>
+            </ul>
+            <li><a href="video/singers_singing.mp4">Singing</a></li>
+            <ul>
+              <li>Singer's List</li>
+              See <a href="#Songlist">Songlist</a>.
+              <li>As requester</li>
+              <li>Song Search</li>
+              <ul>
+                <li>From the active singers above</li>
+                <li>Edit requests</li>
+                Warning: Requesters are only stored locally.
+                You must store the performances to a file and send them to CJ or bsteele.com.
+                See: <a href="#Other_Actions">Other Actions</a>.
+              </ul>
+            </ul>
+
+          </ul>
           <li>History</li>
           <li>Songs</li>
           <li>New Song</li>
@@ -71,9 +99,10 @@
           <li>About</li>
         </ul>
       </li>
+
     </ul>
   </li>
-  <li id="Player">Player
+  <li id="Player">Player Screen
     <p>This screen allows you to play the selected song.</p>
     <ul>
       <li>Back arrow
@@ -81,11 +110,16 @@
       </li>
       <li>Song title in the menu bar
         <p>It's not obvious, but clicking the title, artist and cover artist
-        in the menu bar will send you on a search for the song on youtube.com.
-        You will be responsible for working your way back to this page!</p>
+          in the menu bar will send you on a search for the song on youtube.com.
+          You will be responsible for working your way back to this page!</p>
       </li>
     </ul>
   </li>
+  <li>Concepts</li>
+  <ul>
+    <li id="Leader_Follower">Leader/Follower</li>
+    <li>Singers Requester</li>
+  </ul>
 </ul>
 
 </body>

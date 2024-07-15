@@ -1,5 +1,5 @@
 #!/bin/tcsh
-set echo; set verbose
+#set echo; set verbose
 
 set project=bsteele_music_tutorial
 echo $0\:
@@ -16,4 +16,6 @@ gcloud storage rsync \
 	--predefined-acl=publicRead \
 	--cache-control=public,max-age=60
 if ( $status != 0 ) exit -1
+
+exit 0
 
