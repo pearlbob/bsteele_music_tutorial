@@ -1,0 +1,17 @@
+#!/bin/tcsh
+set echo; set verbose
+
+set project=bsteele_music_tutorial
+echo $0\:
+
+cd ~/github/$project
+
+#	process mkv files to mp4
+#	includes size reduction by ffmpeg
+foreach f ( video/*.mkv )
+	echo $f
+	set fout=$f:r
+	echo $f to $fout
+	ffmpeg -i $f $fout:q.mp4
+	if ( $status == 0 ) rm $f   # dangerous!
+end
