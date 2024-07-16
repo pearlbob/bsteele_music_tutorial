@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="bsteeleMusicApp tutorial" content="width=device-width, initial-scale=1">
   <title>bsteeleMusicApp Tutorial</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <meta name="This is a series of short videos to explain the operation of the bsteeleMusicApp" content="">
 
   <meta property="og:title" content="">
@@ -14,16 +14,15 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="/favicon.png" sizes="any">
+  <link rel="apple-touch-icon" href="./favicon.png">
 
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="manifest" href="./site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<h1>bsteeleMusicApp Tutorial</h1>
+<h1><img src="./favicon.png" alt="bsteele.com icon" style="width: 4%; height: 4%"/>bsteeleMusicApp Tutorial</h1>
 <p>This is a tutorial for the bsteeleMusicApp.
   See <a href="http://www.bsteele.com/bsteeleMusicApp/index.html">bsteeleMusicApp</a>.
   It's a web app designed to allow musicians to play and sing songs together easily.
@@ -37,56 +36,71 @@
 </p>
 <p>Main screens</p>
 <ul>
-  <li><a href="video/main_homepage.mp4">Homepage</a>
+  <li><a href="./video/main_homepage.mp4">Homepage</a>
     <ul>
-      <li id="Songlist">Songlist</li>
-      <ul>
-        <li>Scrolling</li>
-        Scrolling will roll the song list.
-        Selecting a song will display it on the <a href="#Player">player</a> screen.
-        <li>Search</li>
-        Type search terms in the text field. Searches will be executed immediately.
-        Note that it will include matches from song titles, artists and cover artists.
-        <p>Advanced feature: Regular expressions will be processed. For example, try: ba.*fi</p>
-
-        <li>Filters</li>
-        Filters based on metadata can be used here to limit the selection of songs.
-        <li>Order</li>
-        The order of the song list can be selected.
-
-      </ul>
-
-      <li><a href="video/main_menu_options.mp4">Main menu</a> (the hamburger choices in the upper left)
+      <li id="Songlist">Songlist
         <ul>
-          <li><a href="video/main_menu_options_options.mp4">Options</a></li>
-          <li><a href="video/singers.mp4">Singers</a></li>
-          <ul>
-            <li>Setup</li>
-            <ul>
-              <li><a href="video/singers_leader_warning.mp4"> Warning: you are not the leader!</a></li>
-              See <a href="#Leader_Follower">Leader/Follower</a>
-              <li><a href="video/singers_list.mp4">Singer's List</a></li>
-              <li>Singer Search</li>
-              <li><a href="video/singers_new.mp4">New singer</a></li>
-              <li id="Other_Actions">
-                <a href="video/singers_other_actions.mp4">Other Actions</a></li>
-            </ul>
-            <li><a href="video/singers_singing.mp4">Singing</a></li>
-            <ul>
-              <li>Singer's List</li>
-              See <a href="#Songlist">Songlist</a>.
-              <li>As requester</li>
-              <li>Song Search</li>
-              <ul>
-                <li>From the active singers above</li>
-                <li>Edit requests</li>
-                Warning: Requesters are only stored locally.
-                You must store the performances to a file and send them to CJ or bsteele.com.
-                See: <a href="#Other_Actions">Other Actions</a>.
-              </ul>
-            </ul>
+          <li>Scrolling
+            <div>Scrolling will roll the song list.
+              Selecting a song will display it on the <a href="#Player">player</a> screen.
+            </div>
+          </li>
+          <li>Search
+            <div>Type search terms in the text field.
+              Searches will be executed immediately.
+              Note that it will include matches from song titles, artists and cover artists.
+            </div>
+            <div>Advanced feature: Regular expressions will be processed. For example, try: ba.*fi</div>
+          </li>
 
-          </ul>
+          <li>Filters</li>
+          Filters based on metadata can be used here to limit the selection of songs.
+          <li>Order</li>
+          The order of the song list can be selected.
+
+        </ul>
+      </li>
+
+      <li><a href="./video/main_menu_options.mp4">Main menu</a> (the hamburger choices in the upper left)
+        <ul>
+          <li><a href="./video/main_menu_options_options.mp4">Options</a></li>
+          <li><a href="./video/singers.mp4">Singers</a>
+            <ul>
+              <li>Setup
+                <ul>
+                  <li><a href="./video/singers_leader_warning.mp4"> Warning: you are not the leader!</a>
+                    <div>
+                      See <a href="#Leader_Follower">Leader/Follower</a></div>
+                  </li>
+                  <li><a href="./video/singers_list.mp4">Singer's List</a></li>
+                  <li>Singer Search</li>
+                  <li><a href="./video/singers_new.mp4">New singer</a></li>
+                  <li id="Other_Actions">
+                    <a href="./video/singers_other_actions.mp4">Other Actions</a></li>
+                </ul>
+              </li>
+              <li><a href="./video/singers_singing.mp4">Singing</a>
+                <ul>
+                  <li>Singer's List
+                    <div>See <a href="#Songlist">Songlist</a>.</div>
+                  </li>
+                  <li>As requester</li>
+                  <li>Song Search
+                    <ul>
+                      <li>From the active singers above</li>
+                      <li>Edit requests
+                        <div>Warning: Requesters are only stored locally.
+                          You must store the performances to a file and send them to CJ or bsteele.com.
+                          See: <a href="#Other_Actions">Other Actions</a>.
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
           <li>History</li>
           <li>Songs</li>
           <li>New Song</li>
@@ -110,17 +124,36 @@
       </li>
       <li>Song title in the menu bar
         <p>It's not obvious, but clicking the title, artist and cover artist
-          in the menu bar will send you on a search for the song on youtube.com.
+          in the menu bar will send you on a search for the song on YouTube.com.
           You will be responsible for working your way back to this page!</p>
       </li>
     </ul>
   </li>
-  <li>Concepts</li>
-  <ul>
-    <li id="Leader_Follower"><a href="video/concept_leader_follower.mp4">Leader/Follower</a></li>
-    <img src="img/cloud_web_socket_server_leader_follower_20220129.png" alt="leader/follower diagram"/>
-    <li>Singers Requester</li>
-  </ul>
+  <li>Player Screen Setup Screen</li>
+  <li>Edit Screen
+    <ul>
+      <li>Editing</li>
+      <li>File Management</li>
+      <li>File Safety</li>
+    </ul>
+  </li>
+  <li>Sheet Music Screen</li>
+  <li>Concepts
+    <ul>
+      <li id="Leader_Follower"><a href="./video/concept_leader_follower.mp4">Leader/Follower</a>
+        <div>
+          <img src="./img/cloud_web_socket_server_leader_follower_20220129.png" alt="leader/follower diagram"/></div>
+      </li>
+      <li>Leader Follower Complications</li>
+      <li>Singers Requester</li>
+    </ul>
+  </li>
+  <li>Other complications
+    <ul>
+      <li>Use of the app on tablets</li>
+      <li>Use of the app on cell phones</li>
+    </ul>
+  </li>
 </ul>
 
 </body>
