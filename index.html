@@ -34,125 +34,164 @@
 <p>Note: It will be a while until we have a complete set of tutorials. So be patient but
   make suggestions.
 </p>
-<p>Main screens</p>
+<h1><a href="./video/main_homepage.mp4">Homepage</a></h1>
 <ul>
-  <li><a href="./video/main_homepage.mp4">Homepage</a>
+  <li id="Songlist">Songlist
     <ul>
-      <li id="Songlist">Songlist
-        <ul>
-          <li>Scrolling
-            <div>Scrolling will roll the song list.
-              Selecting a song will display it on the <a href="#Player">player</a> screen.
-            </div>
-          </li>
-          <li>Search
-            <div>Type search terms in the text field.
-              Searches will be executed immediately.
-              Note that it will include matches from song titles, artists and cover artists.
-            </div>
-            <div>Advanced feature: Regular expressions will be processed. For example, try: ba.*fi</div>
-          </li>
-
-          <li>Filters</li>
-          Filters based on metadata can be used here to limit the selection of songs.
-          <li>Order</li>
-          The order of the song list can be selected.
-
-        </ul>
+      <li>Scrolling
+        <div>Scrolling will roll the song list.
+          Selecting a song will display it on the <a href="#Player">player</a> screen.
+        </div>
+      </li>
+      <li>Search
+        <div>Type search terms in the text field.
+          Searches will be executed immediately.
+          Note that it will include matches from song titles, artists and cover artists.
+        </div>
+        <div>Advanced feature: Regular expressions will be processed. For example, try: ba.*fi</div>
       </li>
 
-      <li><a href="./video/main_menu_options.mp4">Main menu</a> (the hamburger choices in the upper left)
-        <ul>
-          <li><a href="./video/main_menu_options_options.mp4">Options</a></li>
-          <li><a href="./video/singers.mp4">Singers</a>
-            <ul>
-              <li>Setup
-                <ul>
-                  <li><a href="./video/singers_leader_warning.mp4"> Warning: you are not the leader!</a>
-                    <div>
-                      See <a href="#Leader_Follower">Leader/Follower</a></div>
-                  </li>
-                  <li><a href="./video/singers_list.mp4">Singer's List</a></li>
-                  <li>Singer Search</li>
-                  <li><a href="./video/singers_new.mp4">New singer</a></li>
-                  <li id="Other_Actions">
-                    <a href="./video/singers_other_actions.mp4">Other Actions</a></li>
-                </ul>
-              </li>
-              <li><a href="./video/singers_singing.mp4">Singing</a>
-                <ul>
-                  <li>Singer's List
-                    <div>See <a href="#Songlist">Songlist</a>.</div>
-                  </li>
-                  <li>As requester</li>
-                  <li>Song Search
-                    <ul>
-                      <li>From the active singers above</li>
-                      <li>Edit requests
-                        <div>Warning: Requesters are only stored locally.
-                          You must store the performances to a file and send them to CJ or bsteele.com.
-                          See: <a href="#Other_Actions">Other Actions</a>.
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
+      <li>Filters</li>
+      Filters based on metadata can be used here to limit the selection of songs.
+      <li>Order</li>
+      The order of the song list can be selected.
 
+    </ul>
+  </li>
+  <li><a href="./video/main_menu_options.mp4">Main menu</a> (the hamburger choices in the upper left)
+    <ul>
+      <li><a href="./video/main_menu_options_options.mp4">Options</a></li>
+      <li><a href="./video/singers.mp4">Singers</a>
+        <ul>
+          <li>Setup
+            <ul>
+              <li><a href="./video/singers_leader_warning.mp4"> Warning: you are not the leader!</a>
+                <div>
+                  See <a href="#Leader_Follower">Leader/Follower</a></div>
+              </li>
+              <li><a href="./video/singers_list.mp4">Singer's List</a></li>
+              <li>Singer Search</li>
+              <li><a href="./video/singers_new.mp4">New singer</a></li>
+              <li id="Other_Actions">
+                <a href="./video/singers_other_actions.mp4">Other Actions</a></li>
             </ul>
           </li>
-          <li>History</li>
-          <li>Songs</li>
-          <li>New Song</li>
-          <li>Drums</li>
-          <li>Theory</li>
-          <li>Privacy</li>
-          <li>Docs</li>
-          <li>Metadata</li>
-          <li>CJ</li>
-          <li>About</li>
+          <li><a href="./video/singers_singing.mp4">Singing</a>
+            <ul>
+              <li>Singer's List
+                <div>See <a href="#Songlist">Songlist</a>.</div>
+              </li>
+              <li>As requester</li>
+              <li>Song Search
+                <ul>
+                  <li>From the active singers above</li>
+                  <li>Edit requests
+                    <div>Warning: Requesters are only stored locally.
+                      You must store the performances to a file and send them to CJ or bsteele.com.
+                      See: <a href="#Other_Actions">Other Actions</a>.
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
         </ul>
       </li>
+      <li>History</li>
+      <li>Songs</li>
+      <li>New Song</li>
+      <li>Drums</li>
+      <li>Theory</li>
+      <li>Privacy</li>
+      <li>Docs</li>
+      <li>Metadata</li>
+      <li>CJ</li>
+      <li>About</li>
+    </ul>
+  </li>
 
-    </ul>
+</ul>
+<h1 id="Player">Player Screen</h1>
+<div>This screen allows you to play the selected song.</div>
+<ul>
+  <li>Back arrow
+    <div>Will send you back to the original page.</div>
   </li>
-  <li id="Player">Player Screen
-    <p>This screen allows you to play the selected song.</p>
-    <ul>
-      <li>Back arrow
-        <p>Will send you back to the original page.</p>
-      </li>
-      <li>Song title in the menu bar
-        <p>It's not obvious, but clicking the title, artist and cover artist
-          in the menu bar will send you on a search for the song on YouTube.com.
-          You will be responsible for working your way back to this page!</p>
-      </li>
-    </ul>
+  <li>Song title in the menu bar
+    <div>It's not obvious, but clicking the title, artist and cover artist
+      in the menu bar will send you on a search for the song on YouTube.com.
+      You will be responsible for working your way back to this page!
+      Thanks to YouTube, I don't have enough tools at my end to make this any easier.
+    </div>
   </li>
-  <li>Player Screen Setup Screen</li>
-  <li>Edit Screen
-    <ul>
-      <li>Editing</li>
-      <li>File Management</li>
-      <li>File Safety</li>
-    </ul>
+</ul>
+
+<h1>Player Screen Setup Screen</h1>
+<h1>Edit Screen</h1>
+<ul>
+  <li>Editing</li>
+  <li>File Management</li>
+  <li>File Safety</li>
+</ul>
+<h1>Concepts</h1>
+<ul>
+  <li>Display
+    <div>The display and its fonts seem a bit large.
+      The whole presentation is designed to be readable on an HDTV 20 feet away.
+    </div>
   </li>
-  <li>Sheet Music Screen</li>
-  <li>Concepts
-    <ul>
-      <li id="Leader_Follower"><a href="./video/concept_leader_follower.mp4">Leader/Follower</a>
-        <div>
-          <img src="./img/cloud_web_socket_server_leader_follower_20220129.png" alt="leader/follower diagram"/></div>
-      </li>
-      <li>Leader Follower Complications</li>
-      <li>Singers Requester</li>
-    </ul>
+  <li id="Leader_Follower"><a href="./video/concept_leader_follower.mp4">Leader/Follower</a>
+    <div>
+      <img src="./img/cloud_web_socket_server_leader_follower_20220129.png" alt="leader/follower diagram"/></div>
   </li>
-  <li>Other complications
-    <ul>
-      <li>Use of the app on tablets</li>
-      <li>Use of the app on cell phones</li>
-    </ul>
+  <li>Leader Follower Complications
+    <div>Often times the leader/follower feature can get in the way.
+      You can leave your tablet ready for the CJ studio, but when you try to use it at home,
+      some features are missing since you are still a "follower."
+      Check the Options host selection if this is the case.
+    </div>
+  </li>
+  <li>Singers Requester</li>
+</ul>
+<h1>Other complications</h1>
+<ul>
+  <li>Use of the app on tablets
+    <div>The application is intended to be used on a laptop or desktop.
+      Typically on chrome but many other browsers will work.
+    </div>
+    <div>Most all functions of the app will work on most tablets.
+      Complications can arise if:
+      <ol>
+        <li>The width of the tablet is not wide enough to display all the functions.
+          Sometimes rotating the tablet can fix this.
+        </li>
+        <li>The operating system struggles to allow applications, in this case the browser, to work with files.</li>
+      </ol>
+    </div>
+  </li>
+  <li>Use of the app on cell phones
+    <div>This can function, but the app struggles to display anything reasonable on such a small screen.</div>
+  </li>
+  <li>Audio
+    <div>Unfortunately the audio features of the app are only available on the web (browser) platform.</div>
+  </li>
+  <li>Native versions
+    <div>The app is typically used as a web browser application, but there are other formats that the app
+      is available in.
+      See: Options, About, "Download the app".
+    </div>
+  </li>
+</ul>
+<h1>Beta Features</h1>
+<ul>
+  <li><a href="./video/singer_playlist_bunching.mp4">Singers play list bunching</a></li>
+  <li>Sheet Music Screen
+    <div>This screen has actually been around for a long time.
+      Choose a song, edit the song, select "Sheet Music."
+      The top of the screen is meant to be a representation of a bass guitar.
+      Place the mouse over the sheet music on the bottom and try scrolling!
+    </div>
   </li>
 </ul>
 
